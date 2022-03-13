@@ -33,14 +33,15 @@ step: function() {
 setTimeout(skillSet, 1000);
 });
 
+//スライダー
 const swiper = new Swiper(".swiper", {
   loop: true,
-  // ページネーションが必要なら追加
+  // ページネーション
   pagination: {
     el: ".swiper-pagination",
-    type: "progressbar" /* この行を追加 */
+    type: "progressbar"
   },
-  // ナビボタンが必要なら追加
+  // ナビボタン
   navigation: {
     nextEl: ".swiper-button-next",
     prevEl: ".swiper-button-prev"
