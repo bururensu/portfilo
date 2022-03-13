@@ -33,5 +33,23 @@ step: function() {
 setTimeout(skillSet, 1000);
 });
 
+const swiper = new Swiper(".swiper", {
+  loop: true,
+  // ページネーションが必要なら追加
+  pagination: {
+    el: ".swiper-pagination",
+    type: "progressbar" /* この行を追加 */
+  },
+  // ナビボタンが必要なら追加
+  navigation: {
+    nextEl: ".swiper-button-next",
+    prevEl: ".swiper-button-prev"
+  },
+  autoplay: {
+  delay: 3000,
+  stopOnLastSlide: false,
+  disableOnInteraction: false,
+  reverseDirection: false
+}
 
-const swiper = new Swiper(".swiper", {});
+});
