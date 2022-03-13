@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/reset.css">
+    <script src="js/jQuery-3.4.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal-default-theme.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/remodal/1.0.5/remodal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/3.4.1/css/swiper.min.css">
+    <!--swiperのcdm-->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://unpkg.com/swiper@8/swiper-bundle.min.js"></script>
+    <title>Portfilo</title>
+</head>
+<body>
+
+    <div id="wrapper">
+
+        <header>
+            <h1>Portfilo</h1>
+        </header>
+        <main>
+            <section id="firstview">
+                <div class="hero">
+                    <h1>Less<br>
+                        is<br>
+                        More
+                    </h1>
+                </div>
+            </section>
+            <section id="work">
+                <h2 class="subtitle">Work</h2>
+                <ul>
+                    <li><img src="image/work01.png" alt=""><a href="#modal_a" class="btn-shine">More</a></li>
+                    <li><img src="image/work02.png" alt=""><a href="#modal_b" class="btn-shine">More</a></li>
+                    <li><img src="image/work03.png" alt=""><a href="#modal_c" class="btn-shine">More</a></li>
+                </ul>
+                <ul>
+                    <li><img src="image/work04.png" alt=""><a href="#modal_d" class="btn-shine">More</a></li>
+                    <li><img src="image/work05.png" alt=""><a href="#modal_e" class="btn-shine">More</a></li>
+                    <li><img src="image/work06.png" alt=""><a href="#modal_f" class="btn-shine">More</a></li>
+                </ul>
+                <div class="remodal" data-remodal-id="modal_a">
+                    <!-- スライダーのコンテナ -->
+                    <div class="swiper">
+                        <!-- 必要に応じたwrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- スライド -->
+                            <div class="swiper-slide"><div><img src="image/webp/sunshou05.webp" alt="125naroom"></div></div>
+                            <div class="swiper-slide"><div><img src="image/webp/sunshou01.webp" alt="125naroom"></div></div>
+                            <div class="swiper-slide"><div><img src="image/webp/sunshou02.webp" alt="125naroom"></div></div>
+                            <div class="swiper-slide"><div><img src="image/webp/sunshou03.webp" alt="125naroom"></div></div>
+                            <div class="swiper-slide"><div><img src="image/webp/sunshou04.webp" alt="125naroom"></div></div>
+                        </div>
+                    </div><!--/.swiper-->
+                    <h1 class="modal_tit">ホームページ</h1>
+                    <p>サンショウシステム株式会社（<a href="https://sunshou.co.jp/" target="_break">https://sunshou.co.jp</a>）</p>
+                    <h2 class="modal_tit">期間</h2>
+                    <p>二ヶ月半</p>
+                    <h2 class="modal_tit">担当</h2>
+                    <p>デザイン・コーディング（HTML・CSS・JavaScript・Wordpress）<br>
+                        サイト全体のリニューアル。</p>
+                    <h2 class="modal_tit">概要</h2>
+                    <p>この会社が何をしている会社なのか分からないというのがこのサイトの課題だったので、コンテンツに事業内容と開発実績を追加することで、どのような開発経験があるかを説明しました。</p>
+                    <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+                </div><!--/.modal-->
+
+                <div class="remodal" data-remodal-id="modal_b">
+                    <!-- スライダーのコンテナ -->
+                    <div class="swiper-slide"><div><img src="image/webp/print01.webp" alt="125naroom"></div></div>
+                    <h1 class="modal_tit">ポスター</h1>
+                    <p>インターネット回線の広告</p>
+                    <h2 class="modal_tit">期間</h2>
+                    <p>2週間</p>
+                    <h2 class="modal_tit">概要</h2>
+                    <p>インターネット回線のサービスは細かい説明を聞いてもよくわからないというお客様が多いので、覚えてもらいたいポイントを絞って情報を掲載しました。また、営業用の資料も兼ねていますので必ず説明しなければならない資料としても活用できるようにしています。</p>
+                    <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal_c">
+                    <!-- スライダーのコンテナ -->
+                    <div class="swiper-slide"><div><img src="image/webp/print02.webp" alt="125naroom"></div></div>
+                    <h1 class="modal_tit">ポスター</h1>
+                    <p>売り上げ管理システムの広告</p>
+                    <h2 class="modal_tit">期間</h2>
+                    <p>2週間</p>
+                    <h2 class="modal_tit">概要</h2>
+                    <p>配布するお客様に興味を持ってほしいので、オモテ面でインパクトを持たせて、ウラ面までじっくり見てもらうのが狙いです。紙やExcelでの大量のデータの管理に困っている会社を、ターゲットにしています。</p>
+                    <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+                </div>
+
+                <div class="remodal" data-remodal-id="modal_d">
+                    <!-- スライダーのコンテナ -->
+                    <div class="swiper">
+                        <!-- 必要に応じたwrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- スライド -->
+                            <div class="swiper-slide" id="sp"><div><img src="image/Product/product01.png" alt="125naroom" style="width: 50%; height: 100%;"></div></div>
+                            <div class="swiper-slide" id="sp"><div><img src="image/Product/product02.png" alt="125naroom" style="width: 50%; height: 100%;"></div></div>
+                            <div class="swiper-slide" id="sp"><div><img src="image/Product/product03.png" alt="125naroom" style="width: 50%; height: 100%;"></div></div>
+                            <div class="swiper-slide" id="sp"><div><img src="image/Product/product04.png" alt="125naroom" style="width: 50%; height: 100%;"></div></div>
+                            <div class="swiper-slide" id="sp"><div><img src="image/Product/product05.png" alt="125naroom" style="width: 50%; height: 100%;"></div></div>
+                            <div class="swiper-slide" id="sp"><div><img src="image/Product/product06.png" alt="125naroom" style="width: 50%; height: 100%;"></div></div>
+                        </div>
+                    </div><!--/.swiper-->
+                    <h1 class="modal_tit">アプリ</h1>
+                    <p>子ども向け図鑑webアプリ</p>
+                    <h2 class="modal_tit">期間</h2>
+                    <p>4ヶ月</p>
+                    <h2 class="modal_tit">担当</h2>
+                    <p>アプリ全体のデザイン</p>
+                    <h2 class="modal_tit">概要</h2>
+                    <p>学校の卒業制作で制作しました。カメラで撮影した対象の生き物の情報を登録・閲覧出来るサービスです。私はアプリ全体のデザインとプレゼンテーション資料のデザインを担当しました。ターゲットユーザーが小中学生位の子どもなので、親しみやすいデザインを意識して制作しました。</p>
+                    <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+                </div><!--/.modal-->
+
+                <div class="remodal" data-remodal-id="modal_e">
+                    <!-- スライダーのコンテナ -->
+                    <div class="swiper">
+                        <!-- 必要に応じたwrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- スライド -->
+                            <div class="swiper-slide"><div><img src="image/webp/restaurant01.webp" alt="125naroom"></div></div>
+                            <div class="swiper-slide"><div><img src="image/webp/restaurant02.webp" alt="125naroom"></div></div>
+                            <div class="swiper-slide"><div><img src="image/webp/restaurant05.webp" alt="125naroom"></div></div>
+                            <div class="swiper-slide"><div><img src="image/webp/restaurant06.webp" alt="125naroom"></div></div>
+                        </div>
+                    </div><!--/.swiper-->
+                    <h1 class="modal_tit">ホームページ</h1>
+                    <p>京都のレストラン</p>
+                    <h2 class="modal_tit">期間</h2>
+                    <p>4ヶ月</p>
+                    <h2 class="modal_tit">概要</h2>
+                    <p>学生時代に就活用のポートフォリオとして制作しました。コンセプトは「少し特別で堅苦しくなくフランス料理を楽しめる」です。想定していたユーザー像が20代の京都好きの社会人女性でレストランを選ぶ上で重視しているポイントが内装と美味しそうな料理だったので、コンテンツに料理や店内に対してどのようなこだわりがあるかを紹介しました。</p>
+                    <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+                </div><!--/.modal-->
+
+                <div class="remodal" data-remodal-id="modal_f">
+                    <!-- スライダーのコンテナ -->
+                    <div class="swiper">
+                        <!-- 必要に応じたwrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- スライド -->
+                            <div class="swiper-slide"><div><img src="image/webp/beauty03.webp" alt="125naroom"></div></div>
+                            <div class="swiper-slide"><div><img src="image/webp/beauty01.webp" alt="125naroom"></div></div>
+                            <div class="swiper-slide"><div><img src="image/webp/beauty02.webp" alt="125naroom"></div></div>
+                            <div class="swiper-slide"><div><img src="image/webp/beauty04.webp" alt="125naroom"></div></div>
+                        </div>
+                    </div><!--/.swiper-->
+                    <h1 class="modal_tit">ホームページ</h1>
+                    <p>美容室</p>
+                    <h2 class="modal_tit">期間</h2>
+                    <p>3ヶ月</p>
+                    <h2 class="modal_tit">概要</h2>
+                    <p>学生時代に就活用のポートフォリオとして制作しました。コンセプトは「リラックスして可愛くなる」です。想定していたユーザー像が、美容やファッションなどに強いこだわりがあり、ファッション誌「ＭＯＲＥ」や「美人百花」を好んで読むような人だったので、サイト全体を余白を大きくとってサイト越しに可愛らしさとゆったりとした空間を感じ取ってもらうように意識しました。</p>
+                    <button data-remodal-action="cancel" class="remodal-cancel">閉じる</button>
+                </div><!--/.modal-->
+            </section>
+
+            <section id="skill">
+                <h2 class="subtitle">Skill</h2>
+                <div id="graph">
+                    <div class='right'>
+                        <div class='bar'>
+                            <div class='bar-info html' data-total='95'>
+                            HTML
+                            <span class='percent'>95</span>
+                            </div>
+                        </div>
+
+                        <div class='bar'>
+                            <div class='bar-info css' data-total='95'>
+                            CSS
+                            <span class='percent'>95</span>
+                            </div>
+                        </div>
+
+                        <div class='bar'>
+                            <div class='bar-info js' data-total='60'>
+                            JavaScript
+                            <span class='percent'>60</span>
+                            </div>
+                        </div>
+
+                        <div class='bar'>
+                            <div class='bar-info php' data-total='50'>
+                            PHP
+                            <span class='percent'>50</span>
+                            </div>
+                        </div>
+                        <div class='bar'>
+                            <div class='bar-info wp' data-total='90'>
+                            Wordpress
+                            <span class='percent'>90</span>
+                            </div>
+                        </div>
+                    </div><!--/.right-->
+                    <div class='left'>
+                        <div class='bar'>
+                            <div class='bar-info html' data-total='95'>
+                            XD
+                            <span class='percent'>95</span>
+                            </div>
+                        </div>
+
+                        <div class='bar'>
+                            <div class='bar-info css' data-total='80'>
+                            Photoshop
+                            <span class='percent'>80</span>
+                            </div>
+                        </div>
+
+                        <div class='bar'>
+                            <div class='bar-info js' data-total='60'>
+                            illustrator
+                            <span class='percent'>50</span>
+                            </div>
+                        </div>
+
+                        <div class='bar'>
+                            <div class='bar-info php' data-total='70'>
+                            Affinity Designer
+                            <span class='percent'>70</span>
+                            </div>
+                        </div>
+                        <div class='bar'>
+                            <div class='bar-info wp' data-total='50'>
+                            figma
+                            <span class='percent'>40</span>
+                            </div>
+                        </div>
+                    </div><!--/.left-->
+                </div><!--/#graph-->
+            </section>
+            <section id="what">
+                <h2 class="subtitle">Be conscious</h2>
+                <div id="content">
+                    <div id="text">
+                        <h3>Design</h3>
+                        <p>「なぜこのようなデザインにしたのか？」という質問に対して答えれるようにしています。また、ヒアリングからカンプ作成まで、常に自分自身にこの質問を投げかけるように意識しています。</p>
+                        <h3>Efficient</h3>
+                        <p>生産性向上の為の労力は惜しまないです。新しいツールがあれば試してみたり、同業者のブログやSNSで業務の効率化に成功した方法を公開されていればお試しで取り入れたりしています。</p>
+                        <h3>Preparation</h3>
+                        <p>事前の準備は念入りに行うようにしています。プレゼンテーションの時など特にそう感じるのですが、どういった流れでお話させて頂くか、事前に読みやすい資料を作成してお渡しするなどをしているとこちらの提案内容が通りやすいように感じます。</p>
+                    </div><!--/#text-->
+                    <div id="image">
+                        <img src="image/What.png" alt="">
+                    </div>
+                </div><!--/#content-->
+
+            </section>
+
+        </main>
+        <footer>
+            <h2>Profile</h2>
+            <h3>坂 南海 -Saka Minami-</h3>
+            <p>趣味が旅行・読書・ゲーム・オシャレ・ライブと中々に多趣味。但し、DIYとネイルだけは手を出さないようにしている。手を出したら、本職を忘れて熱中してしまいそうである日急にその方面のスクールに通いかねないので。</p>
+        </footer>
+    </div><!--/#wrapper-->
+
+    <script src="js/portfilo.js"></script>
+    <!-- modal -->
+<!-- モーダルに出てくる内容 -->
+<div class="remodal" data-remodal-id="modal_01">
+    <!-- クローズボタン -->
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <h3 style="text-align: left;">会社ホームページのリニューアル <a href="https://sunshou.co.jp/" target="_blank" style="color:#2B2E38;">(https://sunshou.co.jp)</a></h3>
+    <p style="text-align: left;">担当：デザイン・コーディング</p>
+    <p style="text-align: left;">この会社が何をしている会社なのか分からないというのがこのサイトの課題だったので、コンテンツに事業内容と開発実績を追加することで、どのような開発経験があるかを説明しました。</p>
+</div>
+<!-- モーダルに出てくる内容 -->
+<div class="remodal" data-remodal-id="modal_02">
+    <!-- クローズボタン -->
+    <button data-remodal-action="close" class="remodal-close"></button>
+    <p>test</p>
+</div>
+</body>
+</html>
