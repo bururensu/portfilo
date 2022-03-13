@@ -1,0 +1,293 @@
+$back : #353849;
+$main : #03CC90;
+$text: #FFFFFF;
+$font: 'Cardo', serif;
+
+body{
+    background-color: $back;
+    font-family: YuGothic, "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+header{
+    display: flex;
+    z-index: 10000;
+    position: fixed;
+    width: 100%;
+    .menu{
+        margin: 2%;
+    }
+    h1{
+        color: $text;
+        font-size: 2.5em;
+        margin: 2% 0 0 2%;
+        font-family: 'Cardo', serif;
+    }
+}
+
+main{
+    #firstview{
+        height: 100vh;
+        h1{
+            font-size: 8em;
+            color: $main;
+            padding: 8% 0 0 16%;
+            font-family: 'Cardo', serif;
+        }
+    }
+    .subtitle{
+        font-size: 4em;
+        color: $text;
+        padding: 3% 0 4% 4%;
+        font-family: 'Cardo', serif;
+    }
+    #work{
+        height: 100vh;
+        margin: 0 auto 16% auto;
+
+        ul{
+            display: flex;
+            li{
+                display: flex;
+                margin: 0 auto;
+                flex-direction: column;
+                align-items: center;
+            }
+        
+        }
+    /* ここから下がボタンのCSS*/
+        .btn-shine {
+            color: #FFF;
+            display: inline-block;
+            font-size: 16px;
+            line-height: 45px;
+            width: 92%;
+            margin: 8%;
+            position: relative;
+            text-decoration: none;
+            text-align: center;
+            border: 1px solid transparent;
+            outline: 1px solid;
+            outline-color: rgba(255, 255, 255, 0.5);
+            outline-offset: 0px;
+            text-shadow: none;
+            transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+        }
+
+        .btn-shine:hover {
+            border-color: #FFF;
+            box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+            outline-color: transparent;
+            outline-offset: 12px;
+            text-shadow: 2px 2px 3px #000;
+        }
+
+    }
+
+    #skill{
+            /*棒グラフ*/
+            // @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,700);
+
+            $red: #fd7473;
+            $yellow: #fec951;
+            $blue: #47b8e0;
+            $purp: #9f68d0;
+
+        #graph{
+            display: flex;
+            justify-content: center;
+            width: 90%;
+            margin: 0 auto;
+        }
+
+            .right {
+            width: 100%;
+            }
+
+            .left {
+                width: 100%;
+                }
+
+            .bar{
+                position: relative;
+                width: 95%;
+                height: 48px;
+                background: rgba(255,255,255,0.1);
+                margin-bottom: 1.5rem;
+                border-radius: 5px;
+                .bar-info{
+                    border-radius: 5px;
+                    padding: 0.75rem;
+                    background: $red;
+                    color: white;
+                    width: 10%;
+                    position: relative;
+                    height: 24px;
+                    transition: width 3.3s ease-in-out;
+                    .percent{
+                        float: right;
+                    }
+                    &.html{
+                        background: linear-gradient($red, #FC688E), $red;
+                    }
+                    &.css{
+                        background: linear-gradient($yellow, #FCAD44), $yellow;
+                    }
+                    &.js{
+                        background: linear-gradient($blue, #28BEFA), $blue;
+                    }
+                    &.php{
+                        background: linear-gradient($purp, #BB68D0), $purp;
+                    }
+                    &.wp{
+                        background: linear-gradient($blue, #28BEFA), $blue;
+                    }
+                }
+            }
+        }
+
+    #what{
+        height: 100vh;
+        color: $text;
+        margin-bottom: 16%;
+        #content{
+            display: flex;
+            margin: 0 auto;
+            width: 90%;
+            #text{
+                margin: -3em 4%;
+                h3{
+                    font-size: 1.5em;
+                    margin: 2em 0 0.5em 0;
+                    font-family: 'Cardo', serif;
+                }
+            }
+        }
+
+    }
+}
+
+footer{
+    background: #232734;
+    color: $text;
+    padding: 4% 8% ;
+    h2{
+        font-size: 1.5em;
+        margin-bottom: 1em;
+        font-family: 'Cardo', serif;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+    #wrapper{
+        overflow-x: hidden;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto;
+    }
+    header{
+        .menu {
+            margin: 1% 4%;
+        }
+    }
+
+    main{
+        #firstview{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            h1{
+                font-size: 8em;
+                padding: 16% 0 0 4%;
+            }
+        }
+        .subtitle{
+            font-size: 3em;
+        }
+        #work{
+            width: 100%;
+            height: auto;
+            ul{
+                display: block;
+                margin: 0 auto;
+                li{
+                    display: block;
+                    margin: 0 auto;
+                    text-align: center;
+                }
+            }
+            .btn-shine{
+                margin: 8% auto;
+                width: 75%;
+            }
+        }
+        #skill{
+            #graph{
+                display: block;
+            }
+        }
+        #what{
+            height: auto;
+            #content{
+                display: flex;
+                flex-direction: column-reverse;
+                // img{
+                //     width: 90%;
+                // }
+                #text{
+                    margin: 0 ;
+                }
+            }
+        }
+    }
+
+
+}
+
+.remodal {
+    position: relative;
+    background: $back !important;
+    color: $text !important;
+    p{
+        margin: 2% 0;
+        text-align: left;
+        a{
+            color: $text;
+            text-decoration: solid $text;
+        }
+    }
+}
+
+.remodal img {
+    width: 100%;
+    height: auto;
+    vertical-align: top;
+    
+}
+.remodal-cancel {
+    color: $text;
+    background: $main !important;
+    width: 100%;
+    margin-top: 25px;
+}
+
+.modal_tit{
+    padding: .5em .75em;
+    text-align: left;
+    border-top: 1px double #ccc;
+    border-bottom: 1px double #ccc;
+    color: $text;
+}
+
+.swiper-slide{
+    margin-bottom: 4%;
+    img {
+        max-width: 100%;
+        width: 100%;
+        height: 400px;
+        object-fit: cover;
+        object-position: 50% 0;
+    }
+}

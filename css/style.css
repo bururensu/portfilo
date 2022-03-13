@@ -1,0 +1,323 @@
+@charset "UTF-8";
+body {
+  background-color: #353849;
+  font-family: YuGothic, "游ゴシック体", "Yu Gothic", "ヒラギノ角ゴ Pro", "Hiragino Kaku Gothic Pro", "メイリオ", Meiryo, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10000;
+  position: fixed;
+  width: 100%;
+}
+
+header .menu {
+  margin: 2%;
+}
+
+header h1 {
+  color: #FFFFFF;
+  font-size: 2.5em;
+  margin: 2% 0 0 2%;
+  font-family: 'Cardo', serif;
+}
+
+main #firstview {
+  height: 100vh;
+}
+
+main #firstview h1 {
+  font-size: 8em;
+  color: #03CC90;
+  padding: 8% 0 0 16%;
+  font-family: 'Cardo', serif;
+}
+
+main .subtitle {
+  font-size: 4em;
+  color: #FFFFFF;
+  padding: 3% 0 4% 4%;
+  font-family: 'Cardo', serif;
+}
+
+main #work {
+  height: 100vh;
+  margin: 0 auto 16% auto;
+  /* ここから下がボタンのCSS*/
+}
+
+main #work ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+main #work ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main #work .btn-shine {
+  color: #FFF;
+  display: inline-block;
+  font-size: 16px;
+  line-height: 45px;
+  width: 92%;
+  margin: 8%;
+  position: relative;
+  text-decoration: none;
+  text-align: center;
+  border: 1px solid transparent;
+  outline: 1px solid;
+  outline-color: rgba(255, 255, 255, 0.5);
+  outline-offset: 0px;
+  text-shadow: none;
+  -webkit-transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+  transition: all 1.2s cubic-bezier(0.2, 1, 0.2, 1);
+}
+
+main #work .btn-shine:hover {
+  border-color: #FFF;
+  -webkit-box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+          box-shadow: inset 0 0 20px rgba(255, 255, 255, 0.5), 0 0 20px rgba(255, 255, 255, 0.2);
+  outline-color: transparent;
+  outline-offset: 12px;
+  text-shadow: 2px 2px 3px #000;
+}
+
+main #skill {
+  /*棒グラフ*/
+}
+
+main #skill #graph {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 90%;
+  margin: 0 auto;
+}
+
+main #skill .right {
+  width: 100%;
+}
+
+main #skill .left {
+  width: 100%;
+}
+
+main #skill .bar {
+  position: relative;
+  width: 95%;
+  height: 48px;
+  background: rgba(255, 255, 255, 0.1);
+  margin-bottom: 1.5rem;
+  border-radius: 5px;
+}
+
+main #skill .bar .bar-info {
+  border-radius: 5px;
+  padding: 0.75rem;
+  background: #fd7473;
+  color: white;
+  width: 10%;
+  position: relative;
+  height: 24px;
+  -webkit-transition: width 3.3s ease-in-out;
+  transition: width 3.3s ease-in-out;
+}
+
+main #skill .bar .bar-info .percent {
+  float: right;
+}
+
+main #skill .bar .bar-info.html {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fd7473), to(#FC688E)), #fd7473;
+  background: linear-gradient(#fd7473, #FC688E), #fd7473;
+}
+
+main #skill .bar .bar-info.css {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fec951), to(#FCAD44)), #fec951;
+  background: linear-gradient(#fec951, #FCAD44), #fec951;
+}
+
+main #skill .bar .bar-info.js {
+  background: -webkit-gradient(linear, left top, left bottom, from(#47b8e0), to(#28BEFA)), #47b8e0;
+  background: linear-gradient(#47b8e0, #28BEFA), #47b8e0;
+}
+
+main #skill .bar .bar-info.php {
+  background: -webkit-gradient(linear, left top, left bottom, from(#9f68d0), to(#BB68D0)), #9f68d0;
+  background: linear-gradient(#9f68d0, #BB68D0), #9f68d0;
+}
+
+main #skill .bar .bar-info.wp {
+  background: -webkit-gradient(linear, left top, left bottom, from(#47b8e0), to(#28BEFA)), #47b8e0;
+  background: linear-gradient(#47b8e0, #28BEFA), #47b8e0;
+}
+
+main #what {
+  height: 100vh;
+  color: #FFFFFF;
+  margin-bottom: 16%;
+}
+
+main #what #content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+  width: 90%;
+}
+
+main #what #content #text {
+  margin: -3em 4%;
+}
+
+main #what #content #text h3 {
+  font-size: 1.5em;
+  margin: 2em 0 0.5em 0;
+  font-family: 'Cardo', serif;
+}
+
+footer {
+  background: #232734;
+  color: #FFFFFF;
+  padding: 4% 8%;
+}
+
+footer h2 {
+  font-size: 1.5em;
+  margin-bottom: 1em;
+  font-family: 'Cardo', serif;
+}
+
+@media screen and (max-width: 768px) {
+  #wrapper {
+    overflow-x: hidden;
+  }
+  img {
+    max-width: 100%;
+    height: auto;
+  }
+  header .menu {
+    margin: 1% 4%;
+  }
+  main #firstview {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main #firstview h1 {
+    font-size: 8em;
+    padding: 16% 0 0 4%;
+  }
+  main .subtitle {
+    font-size: 3em;
+  }
+  main #work {
+    width: 100%;
+    height: auto;
+  }
+  main #work ul {
+    display: block;
+    margin: 0 auto;
+  }
+  main #work ul li {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+  main #work .btn-shine {
+    margin: 8% auto;
+    width: 75%;
+  }
+  main #skill #graph {
+    display: block;
+  }
+  main #what {
+    height: auto;
+  }
+  main #what #content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
+  }
+  main #what #content #text {
+    margin: 0;
+  }
+}
+
+.remodal {
+  position: relative;
+  background: #353849 !important;
+  color: #FFFFFF !important;
+}
+
+.remodal p {
+  margin: 2% 0;
+  text-align: left;
+}
+
+.remodal p a {
+  color: #FFFFFF;
+  -webkit-text-decoration: solid #FFFFFF;
+          text-decoration: solid #FFFFFF;
+}
+
+.remodal img {
+  width: 100%;
+  height: auto;
+  vertical-align: top;
+}
+
+.remodal-cancel {
+  color: #FFFFFF;
+  background: #03CC90 !important;
+  width: 100%;
+  margin-top: 25px;
+}
+
+.modal_tit {
+  padding: .5em .75em;
+  text-align: left;
+  border-top: 1px double #ccc;
+  border-bottom: 1px double #ccc;
+  color: #FFFFFF;
+}
+
+.swiper-slide {
+  margin-bottom: 4%;
+}
+
+.swiper-slide img {
+  max-width: 100%;
+  width: 100%;
+  height: 400px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 50% 0;
+     object-position: 50% 0;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,162 @@
+.grid-item {
+  width: 200px;
+}
+
+.grid-item--width2 {
+  width: 400px;
+}
+
+/*menu*/
+.menu {
+  height: 20px;
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  z-index: 99;
+}
+
+.menu__line {
+  background: #fff;
+  display: block;
+  height: 2px;
+  position: absolute;
+  -webkit-transition: -webkit-transform .3s;
+  transition: -webkit-transform .3s;
+  transition: transform .3s;
+  transition: transform .3s, -webkit-transform .3s;
+  width: 100%;
+}
+
+.menu__line--center {
+  top: 9px;
+}
+
+.menu__line--bottom {
+  bottom: 0;
+}
+
+.menu__line--top.active {
+  top: 8px;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.menu__line--center.active {
+  -webkit-transform: scaleX(0);
+          transform: scaleX(0);
+}
+
+.menu__line--bottom.active {
+  bottom: 10px;
+  -webkit-transform: rotate(135deg);
+          transform: rotate(135deg);
+}
+
+/*gnav*/
+.gnav {
+  background: rgba(0, 0, 0, 0.8);
+  display: none;
+  height: 100%;
+  position: fixed;
+  width: 100%;
+  z-index: 98;
+}
+
+.gnav__wrap {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100%;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: absolute;
+  width: 100%;
+}
+
+.gnav__menu__item {
+  margin: 40px 0;
+}
+
+.gnav__menu__item a {
+  color: #fff;
+  font-size: 2em;
+  font-weight: bold;
+  padding: 40px;
+  text-decoration: none;
+  -webkit-transition: .5s;
+  transition: .5s;
+}
+
+.gnav__menu__item a:hover {
+  color: #666;
+}
+
+body {
+  background-color: #353849;
+}
+
+header {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  z-index: 10000;
+  position: fixed;
+  width: 100%;
+}
+
+header .menu {
+  margin: 2%;
+}
+
+header h1 {
+  color: #FFFFFF;
+  font-size: 2.5em;
+  margin: 2% 0 0 2%;
+  font-family: 'Cardo', serif;
+}
+
+header {
+  margin-top: -12%;
+}
+
+header a {
+  color: #FFFFFF;
+}
+
+main {
+  margin-top: 12%;
+}
+
+main #text {
+  width: 80%;
+  margin: 0 auto;
+}
+
+main #text h1 {
+  color: #03CC90;
+  font-size: 2em;
+  margin-bottom: 1em;
+}
+
+main #text p {
+  color: #FFFFFF;
+}
+
+main #text a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+main img {
+  width: 100%;
+}
+
+main #lightbox .lb-container {
+  padding: 21px;
+}
+/*# sourceMappingURL=content.css.map */
